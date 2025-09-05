@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial - R7 Treinamentos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Cores inspiradas na identidade visual */
+        :root {
+            --r7-red: #E50914; /* Um vermelho vibrante similar ao das imagens */
+            --r7-dark: #141414;
+            --r7-gray-dark: #222222;
+            --r7-gray-light: #9CA3AF;
+            --r7-white: #F9FAFB;
+        }
+        .bg-r7-dark { background-color: var(--r7-dark); }
+        .bg-r7-gray-dark { background-color: var(--r7-gray-dark); }
+        .text-r7-red { color: var(--r7-red); }
+        .text-r7-white { color: var(--r7-white); }
+        .text-r7-gray-light { color: var(--r7-gray-light); }
+        .border-r7-red { border-color: var(--r7-red); }
+
+        /* Estilo para a barra de título da seção */
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 1.5rem; /* Ajusta a altura para corresponder ao texto h2 */
+            background-color: var(--r7-red);
+            margin-right: 0.75rem;
+            vertical-align: middle;
+        }
+
+        /* Melhorando a aparência da tabela */
+        th {
+            color: var(--r7-white);
+            font-weight: 600;
+        }
+        td {
+            color: var(--r7-gray-light);
+        }
+        .table-highlight {
+            background-color: rgba(229, 9, 20, 0.1); /* Fundo sutil para a última coluna */
+        }
+        .tier-bronze { color: #CD7F32; }
+        .tier-prata { color: #C0C0C0; }
+        .tier-ouro { color: #FFD700; }
+        .tier-super {
+            background: linear-gradient(90deg, #FFD700, #E50914);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-r7-dark text-r7-white">
+
+    <!-- Hero Banner -->
+    <div class="relative bg-r7-dark overflow-hidden">
+        <div class="absolute inset-0">
+            <!-- Imagem de fundo com tema de treinamento/negócios -->
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full h-full object-cover" alt="[Imagem de fundo de um treinamento]">
+            <div class="absolute inset-0 bg-black/70"></div>
+        </div>
+        <div class="relative container mx-auto px-6 py-16 text-center">
+            <!-- Logo da R7 Treinamentos -->
+            <img src="https://i.imghippo.com/files/cIg5319Vdc.png" alt="Logo R7 Treinamentos" class="h-32 sm:h-36 mx-auto mb-6">
+            <h1 class="text-4xl md:text-5xl font-black tracking-tight text-white">Proposta Comercial</h1>
+            <p class="mt-2 text-lg md:text-xl text-r7-gray-light">Vaga: Executivo de Vendas</p>
+            <!-- Elemento visual vermelho -->
+            <div class="mt-6 w-24 h-1.5 bg-r7-red mx-auto rounded-full"></div>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-5xl relative z-10 -mt-10">
+        
+        <div class="mb-8 p-6 bg-r7-gray-dark rounded-lg border border-gray-700 shadow-lg">
+             <h2 class="text-xl font-bold text-r7-white">Para: Diego Veras</h2>
+             <p class="text-r7-gray-light mt-1">Apresentamos a seguir a proposta de remuneração e comissionamento para a posição de Executivo de Vendas na R7 Treinamentos.</p>
+        </div>
+
+        <!-- Seção de Remuneração -->
+        <div class="space-y-8">
+            
+            <!-- Remuneração Fixa -->
+            <section class="bg-r7-gray-dark p-6 rounded-lg shadow-lg">
+                <h2 class="section-title text-2xl font-bold mb-4">Remuneração Fixa</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-800/50 p-4 rounded-md">
+                        <p class="text-r7-gray-light text-sm">Salário CLT</p>
+                        <p class="text-2xl font-bold text-r7-white">R$ 2.000,00</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-4 rounded-md">
+                        <p class="text-r7-gray-light text-sm">Benefícios</p>
+                        <p class="text-2xl font-bold text-r7-white">R$ 680,00</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comissão dos Cursos -->
+            <section class="bg-r7-gray-dark p-6 rounded-lg shadow-lg">
+                <h2 class="section-title text-2xl font-bold mb-4">Comissão dos Cursos</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="border-b border-gray-700">
+                            <tr>
+                                <th class="p-3">Meta</th>
+                                <th class="p-3 text-center">Qtd. de Vendas</th>
+                                <th class="p-3 text-right">Ticket Médio Mín.</th>
+                                <th class="p-3 text-right">Receita Total Mín.</th>
+                                <th class="p-3 text-center text-r7-red font-bold">Comissão</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-800">
+                                <td class="p-3 font-semibold tier-bronze">Bronze</td>
+                                <td class="p-3 text-center">0 – 6</td>
+                                <td class="p-3 text-right">R$ 3.000,00</td>
+                                <td class="p-3 text-right">R$ 18.000,00</td>
+                                <td class="p-3 text-center font-bold text-lg table-highlight text-r7-white">3,50%</td>
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="p-3 font-semibold tier-prata">Prata</td>
+                                <td class="p-3 text-center">7 – 8</td>
+                                <td class="p-3 text-right">R$ 3.000,00</td>
+                                <td class="p-3 text-right">R$ 24.000,00</td>
+                                <td class="p-3 text-center font-bold text-lg table-highlight text-r7-white">5,00%</td>
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="p-3 font-semibold tier-ouro">Ouro</td>
+                                <td class="p-3 text-center">9 – 11</td>
+                                <td class="p-3 text-right">R$ 3.000,00</td>
+                                <td class="p-3 text-right">R$ 33.000,00</td>
+                                <td class="p-3 text-center font-bold text-lg table-highlight text-r7-white">7,00%</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold tier-super">Super Meta</td>
+                                <td class="p-3 text-center">≥ 12</td>
+                                <td class="p-3 text-right">R$ 3.000,00</td>
+                                <td class="p-3 text-right">R$ 36.000,00</td>
+                                <td class="p-3 text-center font-bold text-lg table-highlight text-r7-white">7,00%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Bonificação Cursos (IC) -->
+            <section class="bg-r7-gray-dark p-6 rounded-lg shadow-lg">
+                <h2 class="section-title text-2xl font-bold mb-4">Bonificação Cursos (IC)</h2>
+                 <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="border-b border-gray-700">
+                            <tr>
+                                <th class="p-3">Faixa de IC</th>
+                                <th class="p-3 text-right text-r7-red font-bold">Bonificação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-800">
+                                <td class="p-3">0 – 5</td>
+                                <td class="p-3 text-right font-bold text-lg">R$ 0,00</td>
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="p-3">6 – 7</td>
+                                <td class="p-3 text-right font-bold text-lg">R$ 1.000,00</td>
+                            </tr>
+                             <tr class="border-b border-gray-800">
+                                <td class="p-3">8 – 10</td>
+                                <td class="p-3 text-right font-bold text-lg">R$ 1.800,00</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">≥ 11</td>
+                                <td class="p-3 text-right font-bold text-lg">R$ 2.000,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- Comissão Sala do CEO -->
+            <section class="bg-r7-gray-dark p-6 rounded-lg shadow-lg">
+                <h2 class="section-title text-2xl font-bold mb-4">Comissão Sala do CEO</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="border-b border-gray-700">
+                            <tr>
+                                <th class="p-3">Meta</th>
+                                <th class="p-3 text-center">Qtd. de Vagas</th>
+                                <th class="p-3 text-right">Ticket Médio Mín.</th>
+                                <th class="p-3 text-right">Receita Total Mín.</th>
+                                <th class="p-3 text-center text-r7-red font-bold">Comissão</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-800">
+                                <td class="p-3 font-semibold tier-bronze">Bronze</td>
+                                <td class="p-3 text-center">1 – 5</td>
+                                <td class="p-3 text-right">R$ 18.000,00</td>
+                                <td class="p-3 text-right">R$ 90.000,00</td>
+                                <td class="p-3 text-center font-bold text-lg table-highlight text-r7-white">2,50%</td>
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="p-3 font-semibold tier-prata">Prata</td>
+                                <td class="p-3 text-center">6 – 7</td>
+                                <td class="p-3 text-right">R$ 18.000,00</td>
+                                <td class="p-3 text-right">R$ 126.000,00</td>
+                                <td class="p-3 text-center font-bold text-lg table-highlight text-r7-white">3,00%</td>
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="p-3 font-semibold tier-ouro">Ouro</td>
+                                <td class="p-3 text-center">8 – 10</td>
+                                <td class="p-3 text-right">R$ 18.000,00</td>
+                                <td class="p-3 text-right">R$ 180.000,00</td>
+                                <td class="p-3 text-center font-bold text-lg table-highlight text-r7-white">4,00%</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-semibold tier-super">Super Meta</td>
+                                <td class="p-3 text-center">≥ 11</td>
+                                <td class="p-3 text-right">R$ 18.000,00</td>
+                                <td class="p-3 text-right">R$ 198.000,00</td>
+                                <td class="p-3 text-center font-bold text-lg table-highlight text-r7-white">5,00%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- Observações Importantes -->
+            <section class="bg-r7-gray-dark p-6 rounded-lg shadow-lg">
+                <h2 class="section-title text-2xl font-bold mb-4">Observações Importantes</h2>
+                <ul class="space-y-3 list-inside">
+                    <li class="flex items-start">
+                        <span class="text-r7-red font-bold mr-2 mt-1">&#10148;</span>
+                        <span class="text-r7-gray-light"><b>Ticket Médio Mínimo</b> é o valor mínimo unitário considerado.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-r7-red font-bold mr-2 mt-1">&#10148;</span>
+                        <span class="text-r7-gray-light"><b>Receita Total Mínima</b> é o faturamento que precisa ser atingido para validar a comissão da faixa.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-r7-red font-bold mr-2 mt-1">&#10148;</span>
+                        <span class="text-r7-gray-light">Se alguma venda ficar abaixo do ticket mínimo, ainda é possível manter a faixa desde que a soma total alcance a Receita Total Mínima.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-r7-red font-bold mr-2 mt-1">&#10148;</span>
+                        <span class="text-r7-gray-light">A <b>Bonificação Cursos (IC)</b> é paga por faixa atingida e não por cada venda individual.</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        
+        <!-- Rodapé -->
+        <footer class="mt-12 text-center">
+            <div class="h-px bg-gray-700 w-1/4 mx-auto mb-4"></div>
+            <p class="text-r7-gray-light text-sm">&copy; 2025 R7 Treinamentos. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
+
+
